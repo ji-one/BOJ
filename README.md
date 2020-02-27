@@ -1,2 +1,2 @@
-# [백준 온라인 저지](https://www.acmicpc.net/) 문제 풀이
-
+# [Baekjoon Online Judge](https://www.acmicpc.net/)
+백준 알고리즘 
