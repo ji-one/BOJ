@@ -8,6 +8,7 @@
 * OS : macOS 10.15.1
 * IDE : Visual Studio Code
 ---
-
+##### 푼 문제
+>1000 A+B
 
 
