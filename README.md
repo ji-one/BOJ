@@ -6,7 +6,7 @@
 ##### 진행 환경
 * Language : C++14
 * OS : macOS 10.15.1
-* Compiler : Visual C++ Compiler
+* IDE : Visual Studio Code
 ---
 
 
