@@ -11,7 +11,7 @@ using namespace std;
 int pisano_periods(int m)
 {
 	int cnt=0;
-	int m1=0,m2=1;
+	int m1=1,m2=1;
 	while(1)
 	{
 		++cnt;
@@ -19,7 +19,7 @@ int pisano_periods(int m)
 		m1=m2;
 		m2+=tmp;
 		m2%=m;	
-		if(m1==0 && m2==1) break;
+		if(m1==1 && m2==1) break;
 	}
 	return cnt;
 }
