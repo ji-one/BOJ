@@ -5,6 +5,7 @@
 * PS : 번호순으로 정렬
 * 삼성 A형 기출 문제 : A형 문제 답안 코드
 * 삼성 SW 역량 테스트 기출 문제 : SW 역량 테스트 답안 코드
+* Solved in Python : Python 연습용  
    
 ##### 진행 환경
 * Language : C++14
