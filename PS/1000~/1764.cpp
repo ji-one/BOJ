@@ -15,7 +15,6 @@ int main()
         v.push_back(s);
     }
     sort(v.begin(), v.end());
-    int cnt = 0;
     for (int i = 0; i < v.size() - 1; i++)
     {
         if (v[i] == v[i + 1])
