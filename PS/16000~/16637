@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+using namespace std;
+int n;
+string s;
+int rst = INT_MIN;
+int calc(char c, int a, int b)
+{
+	if (c == '+')
+		return a + b;
+	else if (c == '-')
+		return a - b;
+	else
+		return a * b;
+}
+void dfs(int idx, int val)
+{
+	if (idx > n - 1)
+	{
+		if (val > rst)
+		{
+			rst = val;
+		}
+		return;
+	}
+	char oper;
+	if (idx == 0)
+	{
+		oper = '+';
+	}
+	else
+		oper = s[idx - 1];
+
+	int value = calc(oper, val, s[idx] - '0');
+	dfs(idx + 2, value); //괄호 없음
+	if (idx + 2 < n)
+	{
+		value = calc(oper, val, calc(s[idx + 1], s[idx] - '0', s[idx + 2] - '0')); //괄호 있음
+		dfs(idx + 4, value);
+	}
+}
+int main()
+{
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cin >> n >> s;
+	dfs(0, 0);
+	cout << rst << '\n';
+	return 0;
+}
